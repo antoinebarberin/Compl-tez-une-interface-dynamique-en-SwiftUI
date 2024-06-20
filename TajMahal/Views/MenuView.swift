@@ -33,7 +33,6 @@ struct MenuView: View {
                     }
                 }
                 .listStyle(PlainListStyle()) // Style de liste simple sans séparateurs
-                .navigationTitle("Menu")
             }
         }
     }
