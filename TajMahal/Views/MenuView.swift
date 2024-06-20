@@ -7,32 +7,37 @@
 
 import SwiftUI
 
-// Menu sous forme de liste
+
 struct MenuView: View {
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        VStack{
-            Text("Menu")
-                .font(.title)
-            VStack (alignment: .leading){
-                Text("Entrées")
-                    .padding(.leading, 20)
-                    .font(.title)
-                List(viewModel.apetizerArray) { dish in
-                    LineDishView(dish: dish)
+        ZStack{
+            Color(.systemGray6).ignoresSafeArea()
+            VStack{
+                Text("Menu")
+                    .font(.largeTitle)
+                List {
+                    Section(header: Text("Entrées")) {
+                        ForEach(viewModel.apetizerArray) { dish in
+                            LineDishView(dish: dish)
+                                .listRowBackground(Color.clear)
+                        }
+                    }
+                    
+                    Section(header: Text("Plats principaux")) {
+                        ForEach(viewModel.mainCourseArray) { dish in
+                            LineDishView(dish: dish)
+                                .listRowBackground(Color.clear) // Rendre les cellules transparentes pour voir la couleur de fond
+                        }
+                    }
                 }
-                .padding()
-                Text("Plats principaux")
-                    .padding(.leading, 20)
-                    .font(.title)
-                List(viewModel.mainCourseArray) { dish in
-                    LineDishView(dish: dish)
-                }
+                .listStyle(PlainListStyle()) // Style de liste simple sans séparateurs
+                .navigationTitle("Menu")
             }
         }
     }
+
 }
 
 
