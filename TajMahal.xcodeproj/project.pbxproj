@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC86D172C23363A00D51583 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC86D162C23363A00D51583 /* Test.swift */; };
+		1FD66EF52C2451BD005D5007 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EF42C2451BD005D5007 /* MenuButton.swift */; };
+		1FD66EF72C245608005D5007 /* DescrptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EF62C245608005D5007 /* DescrptionView.swift */; };
+		1FD66EF92C245C5C005D5007 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EF82C245C5C005D5007 /* LineView.swift */; };
 		428D2B512AFA851900BBA4F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B502AFA851900BBA4F5 /* Model.swift */; };
 		428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* ViewModel.swift */; };
 		42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC86D162C23363A00D51583 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		1FD66EF42C2451BD005D5007 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		1FD66EF62C245608005D5007 /* DescrptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescrptionView.swift; sourceTree = "<group>"; };
+		1FD66EF82C245C5C005D5007 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		428D2B502AFA851900BBA4F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		428D2B522AFA882700BBA4F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		42E9DCAA2AF11136007CE7D0 /* TajMahal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TajMahal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FD66EF32C244AE1005D5007 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1FD66EF42C2451BD005D5007 /* MenuButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		42E9DCA12AF11136007CE7D0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +74,14 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
+				1FD66EF32C244AE1005D5007 /* Buttons */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
+				1FC86D162C23363A00D51583 /* Test.swift */,
 				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
 			);
 			path = TajMahal;
@@ -81,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
+				1FD66EF82C245C5C005D5007 /* LineView.swift */,
+				1FD66EF62C245608005D5007 /* DescrptionView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 			);
 			path = Views;
@@ -158,9 +178,13 @@
 			files = (
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				1FD66EF52C2451BD005D5007 /* MenuButton.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
+				1FD66EF92C245C5C005D5007 /* LineView.swift in Sources */,
+				1FD66EF72C245608005D5007 /* DescrptionView.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
+				1FC86D172C23363A00D51583 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
