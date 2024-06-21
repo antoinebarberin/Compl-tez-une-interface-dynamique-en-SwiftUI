@@ -89,8 +89,7 @@ struct LineDishView: View {
                         Text(dish.price)
                             .font(.subheadline)
                         Spacer()
-                        Text("Spice level")
-                            .font(.subheadline)
+                        spiceLevelView(level: dish.spiceLevel)
                     }
                 }
             }

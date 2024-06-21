@@ -12,6 +12,7 @@
 		1FD66EF72C245608005D5007 /* DescrptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EF62C245608005D5007 /* DescrptionView.swift */; };
 		1FD66EF92C245C5C005D5007 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EF82C245C5C005D5007 /* LineView.swift */; };
 		1FD66EFF2C2562F1005D5007 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66EFE2C2562F1005D5007 /* DishDetailView.swift */; };
+		1FD66F012C257573005D5007 /* SpiceLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD66F002C257573005D5007 /* SpiceLevelView.swift */; };
 		428D2B512AFA851900BBA4F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B502AFA851900BBA4F5 /* Model.swift */; };
 		428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* ViewModel.swift */; };
 		42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */; };
@@ -27,6 +28,7 @@
 		1FD66EF62C245608005D5007 /* DescrptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescrptionView.swift; sourceTree = "<group>"; };
 		1FD66EF82C245C5C005D5007 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		1FD66EFE2C2562F1005D5007 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		1FD66F002C257573005D5007 /* SpiceLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelView.swift; sourceTree = "<group>"; };
 		428D2B502AFA851900BBA4F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		428D2B522AFA882700BBA4F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		42E9DCAA2AF11136007CE7D0 /* TajMahal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TajMahal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
+				1FD66F002C257573005D5007 /* SpiceLevelView.swift */,
 				1FD66EF82C245C5C005D5007 /* LineView.swift */,
 				1FD66EF62C245608005D5007 /* DescrptionView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD66F012C257573005D5007 /* SpiceLevelView.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				1FD66EF52C2451BD005D5007 /* MenuButton.swift in Sources */,

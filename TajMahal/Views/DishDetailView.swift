@@ -66,8 +66,7 @@ struct SpiceLevelView: View{
             RoundedRectangle(cornerRadius: 11)
                 .foregroundColor(.white)
                 .frame(width: 74, height: 22)
-            Text("Spice level")
-                .font(.system(size: 12))
+            spiceLevelView(level: spiceLevel)
         }
     }
 }
