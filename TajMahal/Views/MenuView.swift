@@ -86,7 +86,7 @@ struct LineDishView: View {
                         .font(.system(size: 12))
                         .foregroundStyle(.gray)
                     HStack{
-                        Text("Price")
+                        Text(dish.price)
                             .font(.subheadline)
                         Spacer()
                         Text("Spice level")
