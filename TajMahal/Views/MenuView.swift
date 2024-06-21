@@ -17,9 +17,6 @@ struct MenuView: View {
         NavigationStack{
             ZStack{
                 Color(.systemGray6).ignoresSafeArea()
-                VStack{
-                    Text("Menu")
-                        .font(.largeTitle)
                     List {
                         Section(header: Text("Entrées")) {
                             ForEach(viewModel.apetizerArray) { dish in
@@ -38,15 +35,16 @@ struct MenuView: View {
                                     DishDetailView(dish: dish)
                                 }label : {
                                     LineDishView(dish: dish)
-                                        .listRowBackground(Color.clear) // Rendre les cellules transparentes pour voir la couleur de fond
+                                        .listRowBackground(Color.clear)
+                                        // Rendre les cellules transparentes pour voir la couleur de fond
                                 }
                             }
-                        }
                     }
                     .listStyle(PlainListStyle()) // Style de liste simple sans séparateurs
                 }
             }
         }
+        .navigationTitle("Menu")
         .navigationBarBackButtonHidden(true)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading){
@@ -93,7 +91,7 @@ struct LineDishView: View {
                     }
                 }
             }
-            .padding()
+            .padding(.horizontal, 10)
         }
     }
 }
