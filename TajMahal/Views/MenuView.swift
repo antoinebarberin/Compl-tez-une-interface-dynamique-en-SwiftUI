@@ -9,34 +9,56 @@ import SwiftUI
 
 
 struct MenuView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        ZStack{
-            Color(.systemGray6).ignoresSafeArea()
-            VStack{
-                Text("Menu")
-                    .font(.largeTitle)
-                List {
-                    Section(header: Text("Entrées")) {
-                        ForEach(viewModel.apetizerArray) { dish in
-                            LineDishView(dish: dish)
-                                .listRowBackground(Color.clear)
+        NavigationStack{
+            ZStack{
+                Color(.systemGray6).ignoresSafeArea()
+                VStack{
+                    Text("Menu")
+                        .font(.largeTitle)
+                    List {
+                        Section(header: Text("Entrées")) {
+                            ForEach(viewModel.apetizerArray) { dish in
+                                NavigationLink{
+                                    DishDetailView(dish: dish)
+                                }label : {
+                                    LineDishView(dish: dish)
+                                        .listRowBackground(Color.clear)
+                                }
+                            }
+                        }
+                        
+                        Section(header: Text("Plats principaux")) {
+                            ForEach(viewModel.mainCourseArray) { dish in
+                                NavigationLink{
+                                    DishDetailView(dish: dish)
+                                }label : {
+                                    LineDishView(dish: dish)
+                                        .listRowBackground(Color.clear) // Rendre les cellules transparentes pour voir la couleur de fond
+                                }
+                            }
                         }
                     }
-                    
-                    Section(header: Text("Plats principaux")) {
-                        ForEach(viewModel.mainCourseArray) { dish in
-                            LineDishView(dish: dish)
-                                .listRowBackground(Color.clear) // Rendre les cellules transparentes pour voir la couleur de fond
-                        }
-                    }
+                    .listStyle(PlainListStyle()) // Style de liste simple sans séparateurs
                 }
-                .listStyle(PlainListStyle()) // Style de liste simple sans séparateurs
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading){
+                Button(action: {
+                                    presentationMode.wrappedValue.dismiss()  // Revenir en arrière
+                                }) {
+                                    Image(systemName: "chevron.left")
+                                        .foregroundColor(.gray)
+                                }
             }
         }
     }
-
 }
 
 
